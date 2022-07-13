@@ -1,7 +1,9 @@
+import '../styles/about.css'
+
 
 const About = () => {
     return(
-        <div style={style}>
+        <div className="aboutStyle">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id venenatis enim. Maecenas auctor aliquet tincidunt. Maecenas in mauris pulvinar, efficitur lorem in, ornare elit. 
                 Integer mollis diam a quam interdum, id laoreet erat sagittis. Morbi cursus egestas sem sed vestibulum. 
@@ -11,9 +13,7 @@ const About = () => {
 }
 
 
-const style = {
-    width: "50%"
-}
+
 
 
 export default About

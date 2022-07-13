@@ -1,5 +1,5 @@
 import Skill from './Skill'
-import './skills.css'
+import '../styles/skills.css'
 
 const Skills = () => {
     return (

@@ -1,0 +1,15 @@
+
+.projectsBackground {
+    height:100%;
+    background-color:white;
+}
+
+
+.imageContainer {
+    display:flex;
+    height:80%;
+    justify-content:space-between;
+    align-items: center;
+    margin:20px;
+    
+}

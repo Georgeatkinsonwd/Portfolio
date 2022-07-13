@@ -5,11 +5,12 @@ import Contact from './components/Contact'
 import MySkills from './components/MySkills'
 
 function App() {
+  
   return (
     <div className="App">
       <Header />
       <MySkills />
-      <Projects />
+      <Projects  />
       <Contact />
     </div>
   );

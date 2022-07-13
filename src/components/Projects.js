@@ -1,37 +1,29 @@
 
 import Project from './Project'
 import filmPic from '../images/filmPic.jpg'
+import '../styles/projects.css'
+import Description from './Description'
+import { useState } from 'react'
+
 
 // Maybe have a carousel of projects rotating 
 
 const Projects = () => {
+    const [showProjects, setShowProjects] = useState(false)
     return(
-        <div style={backgroundStyle}>
+        <div className="projectsBackground">
             <h2>Projects</h2>
-            <div const style={style}>
-            <Project img={filmPic} title="Movie App" />
-            <Project title="filler"/>
-            <Project title="filler2" />
+            <Description onAdd={()=> setShowProjects(!showProjects)} />
+            <div className="imageContainer">
+            {showProjects &&<Project img={filmPic} title="Movie App" />}
+            {showProjects &&<Project title="filler"/>}
+            {showProjects &&<Project title="filler2" />}
             </div>
         </div>
     )
 }
 
 
-const backgroundStyle = {
-    height:"600px",
-    background: "linear-gradient(173deg, rgba(225,40,245,1) 0%, rgba(73,107,184,1) 69%)",
-    boxSizing:"border-box"
-}
 
-
-
-const style = {
-    display:"flex",
-    height:"80%",
-    justifyContent: "space-between",
-    alignItems:"center",
-    margin:"20px"
-}
 
 export default Projects 

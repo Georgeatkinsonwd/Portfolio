@@ -1,21 +1,16 @@
 import Skills from './Skills'
 import About from './About'
-
+import '../styles/myskills.css'
 
 const MySkills = () => {
     return(
-        <div style={style}>
+        <div className="mySkills">
             <Skills />
             <About />
         </div>
     )
 }
 
-
-const style = {
-    display:"flex",
-    width:"100%",
-}
 
 
 export default MySkills

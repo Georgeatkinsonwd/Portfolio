@@ -1,0 +1,33 @@
+
+.contactStyle {
+        height:100%;
+        width:100%;
+        text-align: center;
+        margin:0;
+    }
+
+
+h3 {
+    font-size: 40px;
+    display:block;
+    margin:0;
+}
+
+.fa-icon {
+    height:100px;
+    width:100px;
+    padding:20px;
+}
+
+.fa-icon:hover {
+    color:rgb(76, 255, 0)
+}
+
+
+.links {
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+
