@@ -13,7 +13,7 @@ const Projects = () => {
     return(
         <div className="projectsBackground">
             <h2>Projects</h2>
-            <Description onAdd={()=> setShowProjects(!showProjects)} />
+            <Description onAdd={()=> setShowProjects(!showProjects)} showProject={showProjects} />
             <div className="imageContainer">
             {showProjects &&<Project img={filmPic} title="Movie App" />}
             {showProjects &&<Project title="filler"/>}
