@@ -4,7 +4,7 @@ import '../styles/myskills.css'
 
 const MySkills = () => {
     return(
-        <div className="mySkills">
+        <div className="mySkills layer2 spacer2">
             <Skills />
             <About />
         </div>

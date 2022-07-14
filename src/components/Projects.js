@@ -8,7 +8,6 @@ import Button from './Button'
 const Projects = ({onAdd, showProject}) => {
     return(
         <div className="projectsBackground">
-            <h2>Projects</h2>
             <Button color={showProject ? 'red' : 'green'} onClick={onAdd} text={showProject ? 'Hide Projects' : 'Show Projects'}/> 
             <div className="imageContainer">
             

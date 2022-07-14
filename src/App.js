@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <MySkills />
-      <Projects onAdd={()=> setShowProjects(!showProjects)} showProject={showProjects} />
+      <h2>Projects</h2>
       <div className="descContainer">
       <Description
       title = "Google Auth film App"
@@ -31,6 +31,7 @@ function App() {
       intro="Can log in using Google auth and search films from the IMDB to add to your watch/watched list"
       />
       </div>
+      <Projects onAdd={()=> setShowProjects(!showProjects)} showProject={showProjects} />
       <div className = 'imgContainer'>
         {showProjects &&<Project img={filmPic}/>}
         {showProjects &&<Project title="filler"/>}
