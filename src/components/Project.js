@@ -4,7 +4,6 @@ const Project = ({title,img}) => {
     return(
         <div>
                 <img style={imgStyle} src={img} alt=""></img>
-                <span>{title}</span>
         </div>
     )
 }

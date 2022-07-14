@@ -1,0 +1,21 @@
+
+
+.descriptionStyle {
+    display:flex;
+    height:100%;
+    width:33%;
+    overflow: hidden;
+}
+
+
+.descBlock{
+    flex-direction:column;
+    width:100%;
+    margin:20px;
+    height:100%;
+}
+
+a {
+    padding-right:10px;
+}
+

@@ -31,3 +31,20 @@ html {
   font-size: 15px;
   font-family: inherit;
 }
+
+.imgContainer {
+  display:flex;
+  height:80%;
+  justify-content:space-between;
+  align-items: center;
+  margin:20px;
+  
+}
+
+
+.descContainer{
+  box-sizing: border-box;
+  display:flex;
+  width:100%;
+  flex-direction: row;
+}

@@ -1,13 +1,14 @@
-import Button from './Button'
+import '../styles/descriptionStyle.css'
 
-const Description = ({onAdd, showProject}) => {
-    return(
-        <div>
-            <h1>Testing</h1>
-            <p>hello hello hello</p>
-            <Button color={showProject ? 'red' : 'green'} onClick={onAdd} text={showProject ? 'Hide Projects' : 'Show Projects'}/>
-
-            
+const Description = ({title,intro,ghLink,appLink}) => {
+    return (
+        <div className = 'descriptionStyle'>
+            <div className='descBlock'>
+            <h4>{title}</h4>
+            <p>{intro}</p>
+            <a target="_blank" rel="noopener noreferrer" href={appLink}>App</a>
+            <a target="_blank" rel="noopener noreferrer" href={ghLink}>Github</a>
+            </div>
         </div>
     )
 }

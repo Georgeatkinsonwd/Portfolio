@@ -5,11 +5,3 @@
 }
 
 
-.imageContainer {
-    display:flex;
-    height:80%;
-    justify-content:space-between;
-    align-items: center;
-    margin:20px;
-    
-}

@@ -1,23 +1,17 @@
-
-import Project from './Project'
-import filmPic from '../images/filmPic.jpg'
 import '../styles/projects.css'
-import Description from './Description'
-import { useState } from 'react'
+import Button from './Button'
+
 
 
 // Maybe have a carousel of projects rotating 
 
-const Projects = () => {
-    const [showProjects, setShowProjects] = useState(false)
+const Projects = ({onAdd, showProject}) => {
     return(
         <div className="projectsBackground">
             <h2>Projects</h2>
-            <Description onAdd={()=> setShowProjects(!showProjects)} showProject={showProjects} />
+            <Button color={showProject ? 'red' : 'green'} onClick={onAdd} text={showProject ? 'Hide Projects' : 'Show Projects'}/> 
             <div className="imageContainer">
-            {showProjects &&<Project img={filmPic} title="Movie App" />}
-            {showProjects &&<Project title="filler"/>}
-            {showProjects &&<Project title="filler2" />}
+            
             </div>
         </div>
     )
