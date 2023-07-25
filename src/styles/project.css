@@ -1,0 +1,38 @@
+.projectCont{
+    display:flex;
+    width:100%;
+    padding: 50px;
+    border-bottom: 5px solid black;
+}
+
+.projectImgs{
+    width:50%;
+    height:100%;
+}
+
+.projectImgs img {
+    width:100%;
+}
+
+.projectDesc{
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.portPic {
+    width:50%;
+}
+
+.upperImg {
+    margin-top:20px;
+    padding-top: 30px;
+    
+}
+
+.lowerImg {
+    height:60%;
+}
