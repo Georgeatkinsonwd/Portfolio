@@ -6,6 +6,9 @@ import googleAuth from '../images/googleAuth.png'
 import portfolioWeb from '../images/portfolioWeb.png'
 import portfolioMobile from '../images/portfolioMobile.png'
 import portfolioPage from '../images/portfolioPage.png'
+import localAuth from '../images/localAuth.png'
+import explorePage from '../images/explorePage.png'
+import profilePage from '../images/profilePage.png'
 
 
 
@@ -13,6 +16,13 @@ const Projects = () => {
     return(
        <div>
         <h2>Projects</h2>
+
+        <Project 
+        img={[profilePage,localAuth, explorePage ]} 
+        title="Social Media Geogram" 
+        about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id venenatis enim. Maecenas auctor aliquet tincidunt. Maecenas in mauris pulvinar, efficitur lorem in, ornare elit. Integer mollis diam a quam interdum, id laoreet erat sagittis. Morbi cursus egestas sem sed vestibulum. Suspendisse vitae aliquet magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"
+        ghLink="https://github.com/Georgeatkinsonwd/geogram-frontend"
+        />
 
         <Project 
         img={[filmHome,googleAuth, filmPic ]} 
